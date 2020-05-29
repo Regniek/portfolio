@@ -1,0 +1,62 @@
+/*
+Colores
+#318FDE
+#085CA1
+#76A6DE
+#90A8E0
+#E2E8FE
+*/
+body{
+    background-color: #085ca1;
+    color: white;
+}
+.header{
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+}
+.menu{
+    border: 1px solid red;
+    grid-column: 3/4;
+    grid-row: 1;
+}
+.menu nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.menu nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+    margin: 0;
+}
+.present{
+    border: 1px solid red;
+    grid-column: 1/3;
+    grid-row: 1;
+}
+.container{
+display: grid;
+grid-template-columns: 1fr 3fr;
+}
+.container section{
+    border:1px solid red;
+}
+.exp{
+    grid-column:1/2 ;
+    grid-row: 1/3;
+}
+.process{
+    grid-column:2/3 ;
+    grid-row: 1;
+}
+.proyect{
+    grid-column:2/3 ;
+    grid-row: 2;
+}
+.footer {
+    border:1px solid red;
+}
