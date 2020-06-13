@@ -9,55 +9,26 @@
 <body>
     <header class="header">
         <div class="present">
-            <img class="perfilImage"src="./imagenes/perfil.jpeg" alt="Foto">
-            <h1>@JuanRegniek</h1>
-            <h3>Juan Espitia</h3>
-            <h3>Web Developer & Mechanic Engineer / Lover Tech</h3>
-        </div>
-        <div class="menu">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="">Begining</a>
-                    </li>
-                    <li>
-                        <a href="">Process</a>
-                    </li>
-                    <li>
-                        <a href="">Experience</a>
-                    </li>
-                    <li>
-                        <a href="">Proyects</a>
-                    </li>
-                    <li>
-                        <a href="">Blog</a>
-                    </li>
-                    <li>
-                        <a href="">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+            <h1>Juan Espitia</h1>
+            <h3>Web Developer & Mechanic Engineer</h3>
+            </div>
+            <div class="present_image">
+                <img class="perfilImage"src="./imagenes/perfil.jpeg" alt="Foto">
+            </div>
     </header>
     
     <section class="container">
-        <header class='header'>
-        <h3>Plataforma para realizar Reporting</h3>
-            
-        
-        </header>
-                
-
-
-
+        <button onclick="router.loadRoute('')">home</button>
+        <button onclick="router.loadRoute('contacto')">contacto</button>
+        <button onclick="router.loadRoute('about')">about me</button>
+        <div data-router></div>
+    </section>>
     <footer class="footer">
         <div class="contacto-items">
-            <h3>I'm Juan</h3>
-            <button onclick="router.loadRoute('')">home</button>
-                <button onclick="router.loadRoute('contacto')">contacto</button>
-                <button onclick="router.loadRoute('about')">about me</button>
-                <div data-router></div>
-        </div>
+            <a href="">Twitter</a>
+            <a href="">Github</a>
+            <a href="">Instagram</a>
+            </div>
     </footer>
 <script src="router.js"></script>
 <script src="routes.js"></script>
