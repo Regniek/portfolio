@@ -14,3 +14,60 @@ paleta mejorada
 #000103
 
 */
+*{
+    background-color: #000103;
+    color: #e2e8fe;
+    padding: 0;
+    margin: 0;
+    border: 1px solid lightgreen;
+}
+
+.header{
+    width: 100%;
+    height: 250px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
+
+.present_image{
+    object-fit: cover;
+    object-position: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border:3px solid #318FDE ;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.twitter{
+    background-image: url("/imagenes/twitter.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+}
+.github{
+    background-image: url("/imagenes/github.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+}
+.instagram{
+    background-image: url("/imagenes/instagram.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+}
