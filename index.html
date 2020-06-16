@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hi I'm Juan Espitia</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
@@ -15,20 +15,25 @@
         </div>
     </header>
     <section class="container">
-        <button onclick="router.loadRoute('')">Home</button>
-        <button onclick="router.loadRoute('blog')">My Blog</button>
-        <button onclick="router.loadRoute('about')">About Me</button>
-        <button onclick="router.loadRoute('projects')">Projects</button>
-        <div data-router></div>
-    </section>>
+        <button class="container--home" onclick="router.loadRoute('')">Home</button>
+        <button class="container--blog" onclick="router.loadRoute('blog')">My Blog</button>
+        <button class="container--about" onclick="router.loadRoute('about')">About Me</button>
+        <button class="container--projects" onclick="router.loadRoute('projects')">Projects</button>
+        <div class="container__details" data-router></div>
+    </section>
     <footer class="footer">
+        <div class="footer__parte1">
             <p>I'm in next sites   </p>
             <a class="twitter" href="https://twitter.com/JuanRegniek" target="_blank"></a>
             <p>,   </p>
             <a class="github" href="https://github.com/Regniek" target="_blank"></a>
             <p>,   </p>
-            <a class="instagram" href="https://www.instagram.com/juanregniek/" target="_blank">Instagram</a>
+            <a class="instagram" href="https://www.instagram.com/juanregniek/" target="_blank"></a>
             <p> thanks for follow me 💚</p>
+        </div>
+        <div class="footer__parte2">
+            <p>Hecho con 💚 por Regniek</p>
+        </div>
     </footer>
 <script src="router.js"></script>
 <script src="routes.js"></script>

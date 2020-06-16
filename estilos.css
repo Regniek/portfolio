@@ -30,7 +30,6 @@ paleta mejorada
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
-    
 }
 
 .present_image{
@@ -41,12 +40,102 @@ paleta mejorada
     border-radius: 50%;
     border:3px solid #318FDE ;
 }
-.footer {
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 80vh;
+    width: 100%;
+}
+.container--home{
+    grid-column: 1/2;
+    grid-row: 1;
+    outline: none;
+}
+.container--blog{
+    grid-column: 1/2;
+    grid-row: 2;
+    outline: none;
+}
+.container--about{
+    grid-column: 3/4;
+    grid-row: 1;
+    outline: none;
+}
+.container--projects{
+    grid-column: 3/4;
+    grid-row: 2;
+    outline: none;
+}
+.container__details{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    
+}
+/*modificacion de routes*/
+/*introduccion*/
+.container__details{
+    height: 80vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.intro{
+    display: flex;
+    
+}
+.intro__container{
+    height: 150px;
+    width: 600px;
+}
+.intro__container h2{
+    display: block;
+    text-align: center;
+}
+.intro__container h3{
+    display: block;
+    text-align: right;
+}
+/*acerca de*/
+.about{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about h1{
+    font-size: 50px;
+}
+.about__intro{
+    background-color: gray;
+    border: 1px solid #318FDE;
+    color: black;
+    height: 150px;
+    width:200px;
+    justify-self: right;
+}
+.about__intro p{
+    background-color: inherit;
+    color:inherit;
 
+}
+.about__second p{
+    font-size: 30px;
+
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer__parte1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .twitter{
     background-image: url("/imagenes/twitter.png");
     background-repeat: no-repeat;
