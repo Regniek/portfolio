@@ -1,0 +1,44 @@
+.profil__menu{
+    display:none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    opacity: .8;
+    z-index: 5;
+    ol
+        li{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            margin: auto 0;
+        }
+            a{
+                text-decoration: none;
+                outline: none;
+                color: $color-claro;
+                text-align: center;
+            }
+}
+.burger__menu{
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
+    z-index: 10;
+    background-color: $color-claro;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: fixed;
+    cursor: pointer;
+}
+.menu_aparece{
+    display: flex;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+}

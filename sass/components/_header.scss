@@ -1,0 +1,29 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.profil__specific{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    h1 {
+        text-shadow: 3px 3px 8px $brillo;
+        margin-top: 30px;
+        padding: 0;
+    }
+    h2{
+        text-shadow: 3px 3px 8px $brillo;
+        margin: 5px 0 5px 0;
+        padding: 0;
+    }
+    img{
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid $color-claro;
+        box-shadow: 1px 1px 5px $brillo;
+    }
+}

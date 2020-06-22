@@ -1,0 +1,32 @@
+footer {
+    height: 200px;
+    .box__icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--twitter{
+            height: 40px;
+            width: 40px;
+            background-image: url("/images/twitter.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        &--instagram{
+            height: 40px;
+            width: 40px;
+            background-image: url("/images/instagram.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        &--github{
+            height: 40px;
+            width: 40px;
+            background-image: url("/images/github.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+}

@@ -1,0 +1,6 @@
+.box__projects{
+    height: 100%;
+    width: 100%;
+    @include display-grid;
+    @include grid-template-columns(1fr grid-repeat(1));
+}

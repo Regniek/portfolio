@@ -1,0 +1,24 @@
+$color-principal : #012129;
+$color-secundario:#011826;
+$color-claro:#F9FAF5;
+$brillo: #00FFAA;
+
+@mixin principalBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+body {
+	margin: 0;
+	background-color: $color-principal;
+	color: $color-claro;
+}
+
+.internalbox{
+	&__image{
+		height: 250px;
+		width: 40vw;
+		object-fit: contain;
+	}
+}

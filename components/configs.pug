@@ -1,0 +1,7 @@
+mixin outbox(image,title,content,route)
+    .internalbox
+        img(src="images/"+ image).internalbox__image
+        .internalbox__content
+            h3=title
+            p=content
+            a(href=""+route).btnReadMore [Read more ...]
