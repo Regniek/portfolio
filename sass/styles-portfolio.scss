@@ -1,3 +1,6 @@
+html{
+    background-color: black;
+    }
 @import "components/globals.scss";
 @import "components/header.scss";
 @import "components/burgermenu.scss";
@@ -7,4 +10,5 @@
 @import "components/grids.scss";
 @import "components/bootstrap_reboot.scss";
 @import "components/projects.scss";
+@import "components/aboutme.scss";
 

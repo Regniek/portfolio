@@ -1,0 +1,17 @@
+.box__aboutme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    &--whoiam{
+        h2{
+            text-shadow: 3px 3px 8px $brillo;
+        }
+    &--likes{
+        height: 250px;
+        width: 250px;
+        border: 1px solid lightgreen;
+    }
+    }
+}

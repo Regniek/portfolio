@@ -1,7 +1,13 @@
+html {
+  background-color: black;
+}
+
 body {
   margin: 0;
-  background-color: #012129;
+  background: linear-gradient(#012129, black);
   color: #F9FAF5;
+  height: 100%;
+  width: 100%;
 }
 
 .internalbox__image {
@@ -60,6 +66,8 @@ header {
   margin: auto 0;
 }
 .profil__menu a {
+  padding-top: 60px;
+  font-size: 50px;
   text-decoration: none;
   outline: none;
   color: #F9FAF5;
@@ -77,6 +85,12 @@ header {
   border-radius: 50%;
   position: fixed;
   cursor: pointer;
+}
+.burger__menu:hover {
+  height: 150px;
+  width: 150px;
+  background-color: #00FFAA;
+  box-shadow: 2px 2px 8px #F9FAF5;
 }
 
 .menu_aparece {
@@ -118,12 +132,6 @@ footer .box__icons--github {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-}
-
-.box__aboutme {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .msg__container {
@@ -597,4 +605,20 @@ output {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.box__aboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.box__aboutme--whoiam h2 {
+  text-shadow: 3px 3px 8px #00FFAA;
+}
+.box__aboutme--whoiam--likes {
+  height: 250px;
+  width: 250px;
+  border: 1px solid lightgreen;
 }

@@ -11,8 +11,11 @@ $brillo: #00FFAA;
 
 body {
 	margin: 0;
-	background-color: $color-principal;
+	
+	background: linear-gradient($color-principal,black);
 	color: $color-claro;
+	height: 100%;
+	width: 100%;
 }
 
 .internalbox{

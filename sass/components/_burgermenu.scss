@@ -17,6 +17,8 @@
             margin: auto 0;
         }
             a{
+                padding-top: 60px;
+                font-size: 50px;
                 text-decoration: none;
                 outline: none;
                 color: $color-claro;
@@ -34,6 +36,12 @@
     border-radius: 50%;
     position: fixed;
     cursor: pointer;
+    &:hover{
+        height: 150px;
+        width: 150px;
+        background-color: $brillo;
+        box-shadow: 2px 2px 8px $color-claro;
+    }
 }
 .menu_aparece{
     display: flex;
