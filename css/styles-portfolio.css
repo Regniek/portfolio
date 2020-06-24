@@ -79,9 +79,10 @@ header {
   top: 2vh;
   right: 2vw;
   z-index: 10;
-  background-color: #F9FAF5;
-  height: 50px;
-  width: 50px;
+  background-image: url("/images/burger.png");
+  background-color: none;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   position: fixed;
   cursor: pointer;
@@ -90,6 +91,8 @@ header {
   height: 150px;
   width: 150px;
   background-color: #00FFAA;
+  background-position: center;
+  background-repeat: no-repeat;
   box-shadow: 2px 2px 8px #F9FAF5;
 }
 
@@ -110,6 +113,7 @@ footer .box__icons {
   align-items: center;
 }
 footer .box__icons--twitter {
+  margin: 20px 20px;
   height: 40px;
   width: 40px;
   background-image: url("/images/twitter.png");
@@ -118,6 +122,7 @@ footer .box__icons--twitter {
   background-size: contain;
 }
 footer .box__icons--instagram {
+  margin: 20px 20px;
   height: 40px;
   width: 40px;
   background-image: url("/images/instagram.png");
@@ -126,6 +131,7 @@ footer .box__icons--instagram {
   background-size: contain;
 }
 footer .box__icons--github {
+  margin: 20px 20px;
   height: 40px;
   width: 40px;
   background-image: url("/images/github.png");
@@ -133,11 +139,8 @@ footer .box__icons--github {
   background-position: center;
   background-size: contain;
 }
-
-.msg__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+footer .box__icons--github p {
+  margin: 20px 20px;
 }
 
 .box__projects {
@@ -614,11 +617,133 @@ output {
   flex-wrap: wrap;
   flex-direction: column;
 }
-.box__aboutme--whoiam h2 {
-  text-shadow: 3px 3px 8px #00FFAA;
+
+.box__aboutme--stack ul {
+  list-style: none;
 }
-.box__aboutme--whoiam--likes {
-  height: 250px;
-  width: 250px;
+
+.htmlIcon {
+  background-image: url("/images/html.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 48px;
+  width: 48px;
+  margin: 20px auto;
+}
+
+.cssIcon {
+  background-image: url("/images/css.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 48px;
+  width: 48px;
+  margin: 20px auto;
+}
+
+.jsIcon {
+  background-image: url("/images/js.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 48px;
+  width: 48px;
+  margin: 20px auto;
+}
+
+.pugIcon {
+  background-image: url("/images/pug.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 48px;
+  width: 48px;
+  margin: 20px auto;
+}
+
+.sassIcon {
+  background-image: url("/images/sass.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 48px;
+  width: 48px;
+  margin: 20px auto;
+}
+
+.stylusIcon {
+  background-image: url("/images/stylus.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 48px;
+  width: 48px;
+  margin: 20px auto;
+}
+
+.box__aboutme--likes {
+  display: block;
+  text-align: justify;
+  height: 150px;
+  width: 220px;
   border: 1px solid lightgreen;
+  margin: 20px 20px 20px 0px;
+}
+
+.box__aboutme--description {
+  text-align: justify;
+  max-width: 800px;
+}
+
+.msg__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.msg__container .animation__lamp {
+  display: block;
+  justify-content: center;
+}
+.msg__container .animation__lamp--lamp {
+  background: linear-gradient(darkgray, black);
+  height: 30px;
+  width: 500px;
+  border-radius: 15px 15px 0 0;
+}
+.msg__container .switch {
+  height: 100px;
+  width: 50px;
+  background: linear-gradient(black, white);
+  box-shadow: 1px 1px 1px 6px black;
+  font-size: 12px;
+  text-align: center;
+}
+
+.animation__lamp--lights {
+  display: none;
+  background-color: yellow;
+  height: 0px;
+  width: 500px;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-bottom: 100px solid linear-gradient(black, darkgray);
+  opacity: 0.3;
+  box-shadow: 0px 50px 50px 60px yellow;
+}
+
+.text__special {
+  height: 200px;
+}
+.text__special--text {
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+}
+.text__special--by {
+  display: none;
+  width: 500px;
+  text-align: right;
+  margin-bottom: 60px;
+}
+
+.prender {
+  display: block;
 }

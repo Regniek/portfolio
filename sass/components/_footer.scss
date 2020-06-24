@@ -5,6 +5,7 @@ footer {
         justify-content: center;
         align-items: center;
         &--twitter{
+            margin: 20px 20px;
             height: 40px;
             width: 40px;
             background-image: url("/images/twitter.png");
@@ -13,6 +14,7 @@ footer {
             background-size: contain;
         }
         &--instagram{
+            margin: 20px 20px;
             height: 40px;
             width: 40px;
             background-image: url("/images/instagram.png");
@@ -21,12 +23,16 @@ footer {
             background-size: contain;
         }
         &--github{
+            margin: 20px 20px;
             height: 40px;
             width: 40px;
             background-image: url("/images/github.png");
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
+        p{
+            margin:20px 20px;
+        }
         }
     }
 }

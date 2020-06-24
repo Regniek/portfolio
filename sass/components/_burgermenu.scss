@@ -30,9 +30,10 @@
     top: 2vh;
     right: 2vw;
     z-index: 10;
-    background-color: $color-claro;
-    height: 50px;
-    width: 50px;
+    background-image: url("/images/burger.png");
+    background-color: none;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     position: fixed;
     cursor: pointer;
@@ -40,6 +41,8 @@
         height: 150px;
         width: 150px;
         background-color: $brillo;
+        background-position: center;
+        background-repeat: no-repeat;
         box-shadow: 2px 2px 8px $color-claro;
     }
 }

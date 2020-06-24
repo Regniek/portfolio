@@ -4,14 +4,68 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    &--whoiam{
-        h2{
-            text-shadow: 3px 3px 8px $brillo;
-        }
-    &--likes{
-        height: 250px;
-        width: 250px;
-        border: 1px solid lightgreen;
-    }
-    }
+}
+.box__aboutme--stack ul{
+    list-style: none;
+}
+.htmlIcon{
+    background-image: url("/images/html.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 48px;
+    width: 48px;
+    margin: 20px auto;
+}
+.cssIcon {
+    background-image: url("/images/css.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 48px;
+    width: 48px;
+    margin: 20px auto;
+}
+.jsIcon {
+    background-image: url("/images/js.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 48px;
+    width: 48px;
+    margin: 20px auto;
+}
+.pugIcon {
+    background-image: url("/images/pug.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 48px;
+    width: 48px;
+    margin: 20px auto;
+}
+.sassIcon {
+    background-image: url("/images/sass.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 48px;
+    width: 48px;
+    margin: 20px auto;
+}
+.stylusIcon {
+    background-image: url("/images/stylus.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 48px;
+    width: 48px;
+    margin: 20px auto;
+}
+.box__aboutme--likes{
+    display: block;
+text-align: justify;
+    height: 150px;
+    width: 220px;
+    border: 1px solid lightgreen;
+    margin: 20px 20px 20px 0px;
+}
+.box__aboutme--description{
+    text-align: justify;
+    max-width: 800px;
 }

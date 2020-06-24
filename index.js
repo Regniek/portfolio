@@ -2,6 +2,14 @@ const menu=document.querySelector('.menu');
 console.log(menu);
 const boton=document.querySelector('#boton');
 console.log(boton);
+const boton1 = document.querySelector('#btnligths');
+console.log(boton1);
+const menu1=document.querySelector('.animation__lamp--lights');
+console.log(menu1);
+const menu2=document.querySelector('.text__special--text');
+console.log(menu2);
+const menu3=document.querySelector('.text__special--by');
+console.log(menu3);
 
 boton.addEventListener('click', hideShow);
 function hideShow(){
@@ -10,5 +18,24 @@ function hideShow(){
     }else{
         menu.classList.add('menu_aparece');
     }
-}
+};
+
+boton1.addEventListener('click', luces);
+function luces(){
+    if(menu1.classList.contains('prender')){
+        menu1.classList.remove('prender');
+    }else{
+        menu1.classList.add('prender');
+    }
+    if(menu2.classList.contains('prender')){
+        menu2.classList.remove('prender');
+    }else{
+        menu2.classList.add('prender');
+    }
+    if(menu3.classList.contains('prender')){
+        menu3.classList.remove('prender');
+    }else{
+        menu3.classList.add('prender');
+    }
+};
 
