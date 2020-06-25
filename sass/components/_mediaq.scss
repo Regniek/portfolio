@@ -1,0 +1,20 @@
+@media (max-width: 840px)  {
+.box__projects{
+    display: flex;
+    flex-wrap: wrap;
+}
+.internalbox__content{
+    margin: 0 auto;
+}
+
+.profil__specific{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    h1 {
+        font-size: 20px;
+    }
+}
+}

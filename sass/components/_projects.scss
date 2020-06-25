@@ -3,4 +3,16 @@
     width: 100%;
     @include display-grid;
     @include grid-template-columns(1fr grid-repeat(1));
+    .internalbox{
+        border-radius: 15px;
+    }
 }
+.internalbox__image{
+    object-fit: contain;
+    width: 100%;
+}
+.internalbox__content{
+        height: 160px;
+        padding: 20px 30px;
+}
+

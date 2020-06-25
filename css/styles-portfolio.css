@@ -143,18 +143,6 @@ footer .box__icons--github p {
   margin: 20px 20px;
 }
 
-.box__projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.box__blogs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Media Queries Mixin
 **********************/
 /* Reboot Codes - Based on normalize.css v5.0.0
@@ -609,6 +597,19 @@ output {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.box__projects .internalbox {
+  border-radius: 15px;
+}
+
+.internalbox__image {
+  object-fit: contain;
+  width: 100%;
+}
+
+.internalbox__content {
+  height: 160px;
+  padding: 20px 30px;
+}
 
 .box__aboutme {
   display: flex;
@@ -641,7 +642,7 @@ output {
 }
 
 .jsIcon {
-  background-image: url("/images/js.png");
+  background-image: url("/images/JS.png");
   background-repeat: no-repeat;
   background-position: center;
   height: 48px;
@@ -746,4 +747,35 @@ output {
 
 .prender {
   display: block;
+}
+
+@media (max-width: 840px) {
+  .box__projects {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .internalbox__content {
+    margin: 0 auto;
+  }
+
+  .profil__specific {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .profil__specific h1 {
+    font-size: 20px;
+  }
+}
+.boxsecondpage {
+  display: block;
+  max-width: 960px;
+  margin: auto;
+}
+.boxsecondpage h2 {
+  width: 100%;
+  text-align: center;
 }
