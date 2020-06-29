@@ -6,6 +6,8 @@
     .internalbox{
         border-radius: 15px;
     }
+    grid-gap: 15px;
+    padding:20px;
 }
 .internalbox__image{
     object-fit: contain;
@@ -16,3 +18,12 @@
         padding: 20px 30px;
 }
 
+.projects-place{
+    font-family: $fuente2;
+    h2{
+        font-family: $fuente1;
+        text-align: center;
+        color:$color-claro;
+        background-color: $color-titulos;
+    }
+}

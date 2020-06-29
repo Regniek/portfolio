@@ -1,5 +1,7 @@
 footer {
-    height: 200px;
+    background-color: $oscuro-secundario;
+    height: auto;
+    color:$color-claro;
     .box__icons{
         display: flex;
         justify-content: center;

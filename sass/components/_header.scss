@@ -2,28 +2,82 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    background-color: #08388A;
 }
-.profil__specific{
-    display:flex;
-    justify-content: center;
+.container_nav{
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &--botones{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        ul{
+            width: 350px;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    }
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    h1 {
-        text-shadow: 3px 3px 8px $brillo;
-        margin-top: 30px;
-        padding: 0;
+    padding-left: 25px;
+    text-decoration: none;
+    &__special{
+        font-size: 40px;
+        text-decoration: none;
+        color:$color-claro;
+        font-family: $fuente-logo;
     }
-    h2{
-        text-shadow: 3px 3px 8px $brillo;
-        margin: 5px 0 5px 0;
-        padding: 0;
-    }
-    img{
-        height: 150px;
-        border-radius: 50%;
-        border: 3px solid $color-claro;
-        box-shadow: 1px 1px 5px $brillo;
+    &:hover{
+        text-decoration: none;
+        color: white;
     }
 }
+
+.icono-p{
+    display: block;
+    background-image: url("/images/projects-dark.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+}
+
+.icono-c{
+    display: block;
+    background-image: url("/images/settingsblack.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    ul{
+        display: none;
+        position: absolute;
+        width: 150px;
+        right: 1px;
+        top: 0;
+        height: 100px;
+        background-color: $color-claro;
+    }
+    &:hover ul{
+        display:block;
+    }
+}
+
+.icono-i{
+    display: block;
+    background-image: url("/images/aboutblack.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+}
+

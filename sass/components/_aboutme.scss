@@ -6,6 +6,7 @@
     flex-direction: column;
 }
 .box__aboutme--stack ul{
+    display: flex;
     list-style: none;
 }
 .htmlIcon{
@@ -58,14 +59,37 @@
     margin: 20px auto;
 }
 .box__aboutme--likes{
-    display: block;
-text-align: justify;
-    height: 150px;
-    width: 220px;
-    border: 1px solid lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    height: 90px;
+    width: 540px;
+    border: 1px solid $oscuro-secundario;
     margin: 20px 20px 20px 0px;
+    padding: 10px
 }
 .box__aboutme--description{
     text-align: justify;
     max-width: 800px;
+}
+.profil__specific{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    h1 {
+        margin-top: 30px;
+        padding: 0;
+    }
+    h2{
+        margin: 5px 0 5px 0;
+        padding: 0;
+    }
+    img{
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid $color-claro;
+    }
 }

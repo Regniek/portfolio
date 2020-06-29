@@ -1,7 +1,12 @@
-$color-principal : #012129;
-$color-secundario:#011826;
-$color-claro:#F9FAF5;
-$brillo: #00FFAA;
+$claro-principal: #688A96;
+$claro-secundario:#011826;
+$color-claro:#dddddd;
+$oscuro-principal: #02303f;
+$oscuro-secundario:#000e13;
+$color-titulos:#08388A;
+$fuente-logo: 'Pacifico', cursive;
+$fuente2:'Source Code Pro', monospace;
+$fuente1:'Biryani', sans-serif;
 
 @mixin principalBox {
 	display: flex;
@@ -11,13 +16,15 @@ $brillo: #00FFAA;
 
 body {
 	margin: 0;
-	background: linear-gradient($color-principal,black);
-	color: $color-claro;
+	color: $color-titulos;
 	height: 100%;
 	width: 100%;
+	font-family: $fuente2;
 }
 
 .internalbox{
+	box-shadow: 1px 1px 3px black;
+	padding: 20px;
 	&__image{
 		height: 250px;
 		width: 40vw;

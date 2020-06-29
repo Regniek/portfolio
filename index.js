@@ -1,15 +1,11 @@
 const menu=document.querySelector('.menu');
-console.log(menu);
 const boton=document.querySelector('#boton');
-console.log(boton);
 const boton1 = document.querySelector('#btnligths');
-console.log(boton1);
 const menu1=document.querySelector('.animation__lamp--lights');
-console.log(menu1);
 const menu2=document.querySelector('.text__special--text');
-console.log(menu2);
 const menu3=document.querySelector('.text__special--by');
-console.log(menu3);
+
+
 
 boton.addEventListener('click', hideShow);
 function hideShow(){

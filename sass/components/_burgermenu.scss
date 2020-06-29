@@ -26,6 +26,7 @@
             }
 }
 .burger__menu{
+    display: none;
     position: absolute;
     top: 2vh;
     right: 2vw;
@@ -38,9 +39,8 @@
     position: fixed;
     cursor: pointer;
     &:hover{
-        height: 150px;
-        width: 150px;
-        background-color: $brillo;
+        height: 100px;
+        width: 100px;
         background-position: center;
         background-repeat: no-repeat;
         box-shadow: 2px 2px 8px $color-claro;

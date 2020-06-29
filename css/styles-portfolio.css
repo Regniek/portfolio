@@ -1,15 +1,15 @@
-html {
-  background-color: black;
-}
-
 body {
   margin: 0;
-  background: linear-gradient(#012129, black);
-  color: #F9FAF5;
+  color: #08388A;
   height: 100%;
   width: 100%;
+  font-family: "Source Code Pro", monospace;
 }
 
+.internalbox {
+  box-shadow: 1px 1px 3px black;
+  padding: 20px;
+}
 .internalbox__image {
   height: 250px;
   width: 40vw;
@@ -20,31 +20,85 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  background-color: #08388A;
 }
 
-.profil__specific {
+.container_nav {
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container_nav--botones {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
 }
-.profil__specific h1 {
-  text-shadow: 3px 3px 8px #00FFAA;
-  margin-top: 30px;
-  padding: 0;
+.container_nav--botones ul {
+  width: 350px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.profil__specific h2 {
-  text-shadow: 3px 3px 8px #00FFAA;
-  margin: 5px 0 5px 0;
-  padding: 0;
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 25px;
+  text-decoration: none;
 }
-.profil__specific img {
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid #F9FAF5;
-  box-shadow: 1px 1px 5px #00FFAA;
+.logo__special {
+  font-size: 40px;
+  text-decoration: none;
+  color: #dddddd;
+  font-family: "Pacifico", cursive;
+}
+.logo:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.icono-p {
+  display: block;
+  background-image: url("/images/projects-dark.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80px;
+  width: 80px;
+}
+
+.icono-c {
+  display: block;
+  background-image: url("/images/settingsblack.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80px;
+  width: 80px;
+}
+.icono-c ul {
+  display: none;
+  position: absolute;
+  width: 150px;
+  right: 1px;
+  top: 0;
+  height: 100px;
+  background-color: #dddddd;
+}
+.icono-c:hover ul {
+  display: block;
+}
+
+.icono-i {
+  display: block;
+  background-image: url("/images/aboutblack.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80px;
+  width: 80px;
 }
 
 .profil__menu {
@@ -70,11 +124,12 @@ header {
   font-size: 50px;
   text-decoration: none;
   outline: none;
-  color: #F9FAF5;
+  color: #dddddd;
   text-align: center;
 }
 
 .burger__menu {
+  display: none;
   position: absolute;
   top: 2vh;
   right: 2vw;
@@ -88,12 +143,11 @@ header {
   cursor: pointer;
 }
 .burger__menu:hover {
-  height: 150px;
-  width: 150px;
-  background-color: #00FFAA;
+  height: 100px;
+  width: 100px;
   background-position: center;
   background-repeat: no-repeat;
-  box-shadow: 2px 2px 8px #F9FAF5;
+  box-shadow: 2px 2px 8px #dddddd;
 }
 
 .menu_aparece {
@@ -105,7 +159,9 @@ header {
 }
 
 footer {
-  height: 200px;
+  background-color: #000e13;
+  height: auto;
+  color: #dddddd;
 }
 footer .box__icons {
   display: flex;
@@ -596,6 +652,8 @@ output {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  padding: 20px;
 }
 .box__projects .internalbox {
   border-radius: 15px;
@@ -611,6 +669,16 @@ output {
   padding: 20px 30px;
 }
 
+.projects-place {
+  font-family: "Source Code Pro", monospace;
+}
+.projects-place h2 {
+  font-family: "Biryani", sans-serif;
+  text-align: center;
+  color: #dddddd;
+  background-color: #08388A;
+}
+
 .box__aboutme {
   display: flex;
   justify-content: center;
@@ -620,6 +688,7 @@ output {
 }
 
 .box__aboutme--stack ul {
+  display: flex;
   list-style: none;
 }
 
@@ -679,17 +748,41 @@ output {
 }
 
 .box__aboutme--likes {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: justify;
-  height: 150px;
-  width: 220px;
-  border: 1px solid lightgreen;
+  height: 90px;
+  width: 540px;
+  border: 1px solid #000e13;
   margin: 20px 20px 20px 0px;
+  padding: 10px;
 }
 
 .box__aboutme--description {
   text-align: justify;
   max-width: 800px;
+}
+
+.profil__specific {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.profil__specific h1 {
+  margin-top: 30px;
+  padding: 0;
+}
+.profil__specific h2 {
+  margin: 5px 0 5px 0;
+  padding: 0;
+}
+.profil__specific img {
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #dddddd;
 }
 
 .msg__container {
@@ -710,12 +803,13 @@ output {
   border-radius: 15px 15px 0 0;
 }
 .msg__container .switch {
-  height: 100px;
-  width: 50px;
+  height: 50px;
+  width: 100px;
   background: linear-gradient(black, white);
-  box-shadow: 1px 1px 1px 6px black;
   font-size: 12px;
   text-align: center;
+  border-radius: 35%;
+  outline: none;
 }
 
 .animation__lamp--lights {
