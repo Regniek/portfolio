@@ -17,4 +17,57 @@
         font-size: 20px;
     }
 }
+.container_nav--botones{
+    display:none;
+}
+.burger__menu{
+    display: flex;
+}
+.icono-p{
+    display: block;
+    background-image: url("/images/projects-dark.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+}
+
+.icono-c{
+    ul{
+        display: none;
+        position: absolute;
+        top: 30vh;
+        bottom: 30vh;
+        left: 0;
+        right: 0;
+        height: 40vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: white;
+        opacity: 1;
+        li{
+            display: block;
+            flex-wrap: wrap;
+            font-size: 20px;
+            color: black;
+            padding: 0;
+            margin: 0 auto;
+            a{
+                text-decoration: none;
+                outline: none;
+                font-size: 20px;
+                padding: 0;
+                margin: 0 auto;
+                color: black;
+            }
+        }
+
+    }
+    &:hover ul{
+        display:flex;
+        cursor: pointer;
+    }
+}
 }

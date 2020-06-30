@@ -16,6 +16,18 @@ body {
   object-fit: contain;
 }
 
+.textdark {
+  color: white;
+}
+
+.fondodark {
+  background: linear-gradient(#02303f, #000e13);
+}
+
+.cabezanegra {
+  background: linear-gradient(#02303f, #000e13);
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -89,6 +101,7 @@ header {
 }
 .icono-c:hover ul {
   display: block;
+  cursor: pointer;
 }
 
 .icono-i {
@@ -143,8 +156,8 @@ header {
   cursor: pointer;
 }
 .burger__menu:hover {
-  height: 100px;
-  width: 100px;
+  height: 65px;
+  width: 65px;
   background-position: center;
   background-repeat: no-repeat;
   box-shadow: 2px 2px 8px #dddddd;
@@ -862,6 +875,59 @@ output {
   }
   .profil__specific h1 {
     font-size: 20px;
+  }
+
+  .container_nav--botones {
+    display: none;
+  }
+
+  .burger__menu {
+    display: flex;
+  }
+
+  .icono-p {
+    display: block;
+    background-image: url("/images/projects-dark.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+  }
+
+  .icono-c ul {
+    display: none;
+    position: absolute;
+    top: 30vh;
+    bottom: 30vh;
+    left: 0;
+    right: 0;
+    height: 40vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    opacity: 1;
+  }
+  .icono-c ul li {
+    display: block;
+    flex-wrap: wrap;
+    font-size: 20px;
+    color: black;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .icono-c ul li a {
+    text-decoration: none;
+    outline: none;
+    font-size: 20px;
+    padding: 0;
+    margin: 0 auto;
+    color: black;
+  }
+  .icono-c:hover ul {
+    display: flex;
+    cursor: pointer;
   }
 }
 .boxsecondpage {

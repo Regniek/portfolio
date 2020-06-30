@@ -31,3 +31,13 @@ body {
 		object-fit: contain;
 	}
 }
+
+.textdark{
+	color:white;
+}
+.fondodark{
+	background:linear-gradient($oscuro-principal,$oscuro-secundario);
+}
+.cabezanegra{
+	background:linear-gradient($oscuro-principal,$oscuro-secundario);
+}

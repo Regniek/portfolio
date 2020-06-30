@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html id="todo">
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/styles-portfolio.css">
     <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&amp;family=Pacifico&amp;family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&amp;display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="cabeza">
       <div class="container_nav">
         <div class="logo"><a class="logo__special" href="/index.html">Regniek.Dev</a></div>
         <nav class="container_nav--botones">
@@ -15,8 +15,8 @@
             <li><a class="icono-i" href="/about.html"></a></li>
             <li class="icono-c" href="">
               <ul>
-                <li><a href="">English/Spanish</a></li>
-                <li><a href="">Light/Dark</a></li>
+                <li><a href="en/index.html">English/Spanish</a></li>
+                <li onclick="modooscuro2()">Light/Dark</li>
               </ul>
             </li>
           </ul>
@@ -24,29 +24,34 @@
       </div>
     </header>
     <section class="profil__menu menu">
-      <ol>
-        <li><a href="/index.html">Inicio</a></li>
-        <li><a href="/projects.html">Proyectos</a></li>
-        <li><a href="/about.html">Acerca de</a></li>
-      </ol>
+      <ul>
+        <li><a class="icono-p" href="/index.html#projects"></a></li>
+        <li><a class="icono-i" href="/about.html"></a></li>
+        <li class="icono-c" href="">
+          <ul>
+            <li><a href="en/index.html">English/Spanish</a></li>
+            <li onclick="modooscuro2()">Light/Dark</li>
+          </ul>
+        </li>
+      </ul>
     </section><i class="burger__menu" id="boton"></i>
     <section class="box__projects">
       <div class="internalbox"><img class="internalbox__image" src="images/portafolio.JPG"/>
         <div class="internalbox__content">
-          <h3>Portfolio</h3>
-          <p>Este es mi portafolio el cual fue creado con diferentes herramientas que he aprendido</p><a class="btnReadMore" href="/projects/portfolio.html">[Read more ...]</a>
+          <h3 id="t5">Portfolio</h3>
+          <p id="p3">Este es mi portafolio el cual fue creado con diferentes herramientas que he aprendido</p><a class="btnReadMore" href="/projects/portfolio.html">[Read more ...]</a>
         </div>
       </div>
       <div class="internalbox"><img class="internalbox__image" src="images/ingefarm.JPG"/>
         <div class="internalbox__content">
-          <h3>My First Page</h3>
-          <p>Ingefarm.co es la primera pagina web que construi y puse en la web realizada con HTML y CSS puro</p><a class="btnReadMore" href="/projects/ingefarm.html">[Read more ...]</a>
+          <h3 id="t5">My First Page</h3>
+          <p id="p3">Ingefarm.co es la primera pagina web que construi y puse en la web realizada con HTML y CSS puro</p><a class="btnReadMore" href="/projects/ingefarm.html">[Read more ...]</a>
         </div>
       </div>
       <div class="internalbox"><img class="internalbox__image" src="images/blog.JPG"/>
         <div class="internalbox__content">
-          <h3>Mi Blog</h3>
-          <p>Te invito a que pases a mi blog uno de mis proyectos para ayudar a la comunidad</p><a class="btnReadMore" href="https://regniek.github.io/RegniekBlog/index.html">[Read more ...]</a>
+          <h3 id="t5">Mi Blog</h3>
+          <p id="p3">Te invito a que pases a mi blog uno de mis proyectos para ayudar a la comunidad</p><a class="btnReadMore" href="https://regniek.github.io/RegniekBlog/index.html">[Read more ...]</a>
         </div>
       </div>
     </section>
