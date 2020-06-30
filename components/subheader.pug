@@ -1,14 +1,17 @@
-header
+header.cabeza
     div.container_nav
         div.logo
-            a.logo__special(href="../index.html") Regniek.Dev
+            a.logo__special(href="/index.html") Regniek.Dev
         nav.container_nav--botones
             ul
                 li
-                    a.icono-p(href="../index.html#projects")
+                    a.icono-p(href="/index.html#projects")
                 li
-                    a.icono-i(href="../about.html")
-                li
-                    a.icono-c(href="#")
+                    a.icono-i(href="/about.html")
+                li.icono-c(href="")
+                        ul
+                            li
+                                a(href="en/index.html") English/Spanish
+                            li(onclick="modooscuro2()") Light/Dark
 
 include subburgermenu.pug

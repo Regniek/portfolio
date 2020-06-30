@@ -6,24 +6,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&amp;family=Pacifico&amp;family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&amp;display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="cabeza">
       <div class="container_nav">
-        <div class="logo"><a class="logo__special" href="../index.html">Regniek.Dev</a></div>
+        <div class="logo"><a class="logo__special" href="/index.html">Regniek.Dev</a></div>
         <nav class="container_nav--botones">
           <ul>
-            <li><a class="icono-p" href="../index.html#projects"></a></li>
-            <li><a class="icono-i" href="../about.html"></a></li>
-            <li><a class="icono-c" href="#"></a></li>
+            <li><a class="icono-p" href="/index.html#projects"></a></li>
+            <li><a class="icono-i" href="/about.html"></a></li>
+            <li class="icono-c" href="">
+              <ul>
+                <li><a href="en/index.html">English/Spanish</a></li>
+                <li onclick="modooscuro2()">Light/Dark</li>
+              </ul>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
     <section class="profil__menu menu">
-      <ol>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="../projects.html">Proyectos</a></li>
-        <li><a href="../about.html">Acerca de</a></li>
-      </ol>
+      <ul>
+        <li><a class="icono-p" href="/index.html#projects"></a></li>
+        <li><a class="icono-i" href="/about.html"></a></li>
+        <li class="icono-c" href="">
+          <ul>
+            <li><a href="en/index.html">English/Spanish</a></li>
+            <li onclick="modooscuro2()">Light/Dark</li>
+          </ul>
+        </li>
+      </ul>
     </section><i class="burger__menu" id="boton"></i>
     <section class="boxsecondpage">
       <h2>Portafolio</h2>
