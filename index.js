@@ -18,7 +18,7 @@ const texto3 = document.querySelector('#texto3');
 const todo = document.querySelector('#todo');
 const cabeza = document.querySelector('.cabeza');
 
-var memoria = 1;
+var memoria = 0;
 
 boton.addEventListener('click', hideShow);
 function hideShow(){
@@ -51,6 +51,7 @@ function luces(){
 function modooscuro(){
     if(t1.classList.contains('textdark')){
         t1.classList.remove('textdark');
+        t1.innerHTML="¿Quien soy yo?";
         t2.classList.remove('textdark');
         t3.classList.remove('textdark');
         t4.classList.remove('textdark');
@@ -64,6 +65,7 @@ function modooscuro(){
         cabeza.classList.remove('cabezanegra');
     }else{
         t1.classList.add('textdark');
+        t1.innerHTML="Who Am I?";
         t2.classList.add('textdark');
         t3.classList.add('textdark');
         t4.classList.add('textdark');
@@ -107,4 +109,16 @@ function modooscuro2(){
         }catch{
             return modooscuro();
         }
+}
+
+window.onload = function vermodooscuro(){
+    if(memoria===1){
+        try{
+            return modooscuro1();
+        }catch{
+            return modooscuro();
+        }
+    }else{
+        console.log('Lo lograste')
+    }
 }
