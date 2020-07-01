@@ -51,7 +51,6 @@ function luces(){
 function modooscuro(){
     if(t1.classList.contains('textdark')){
         t1.classList.remove('textdark');
-        t1.innerHTML="¿Quien soy yo?";
         t2.classList.remove('textdark');
         t3.classList.remove('textdark');
         t4.classList.remove('textdark');
@@ -65,7 +64,6 @@ function modooscuro(){
         cabeza.classList.remove('cabezanegra');
     }else{
         t1.classList.add('textdark');
-        t1.innerHTML="Who Am I?";
         t2.classList.add('textdark');
         t3.classList.add('textdark');
         t4.classList.add('textdark');
@@ -120,5 +118,22 @@ window.onload = function vermodooscuro(){
         }
     }else{
         console.log('Lo lograste')
+    }
+}
+
+function  traduciendo(){
+    console.log(t1.innerHTML);
+    if(t1.innerHTML == "¿Quien soy yo?"){
+        t1.innerHTML="Who Am I?";
+        t2.innerHTML="Hi, I am Juan Camilo Espitia Camacho";
+        t3.innerHTML="Developer & Engineer";
+        p2.innerHTML="Welcome to my being, I am Juan Camilo Espitia Camacho, Web developer and Reporting & CPU Engineer of General Motors colomotores in the city of Bogotá, Mechanical Engineer of the Francisco José de Caldas District University, passionate about all kinds of bicycles, substitute father of a boy and girl, husband of a great woman. I fell in love with software development at 15 years old, but by chance in life I left it for more than 10 years, at 28 I take it up again and with the help of Platzi and my family I will be one of the best. This site is created to start my journey as a Blogger and serve the community.";
+        t4.innerHTML="This is my Stack:";
+    }else{
+        t1.innerHTML="¿Quien soy yo?";
+        t2.innerHTML="Hola, yo soy Juan Camilo Espitia Camacho";
+        t3.innerHTML="Desarrollador & Ingeniero";
+        p2.innerHTML="Bienvenido a mi ser, soy Juan Camilo Espitia Camacho, Web developer y Reporting & CPU Engineer de General Motors colomotores en la ciudad de Bogotá, Ingeniero Mecánico de la Universidad Distrital Francisco José de Caldas, apasionado por todo tipo de bicicletas, padre sustituto de un niño y una niña, esposo de una mujer grandiosa. Me enamore del desarrollo de software a los 15 años, pero por casualidades de la vida lo deje por mas de 10 años, a mis 28 años lo retomo y con la ayuda de Platzi y mi familia seré uno de los mejores. Este sitio esta creado para empezar mi camino como Blogger y servir a la comunidad.";
+        t4.innerHTML="Este es mi Stack:";
     }
 }
